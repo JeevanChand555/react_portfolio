@@ -1,9 +1,9 @@
 import React from "react";
 import ec from "../assests/images/ec.png";
-
+import { Layout } from "./Layout";
 export const Projects = () => {
   return (
-    <>
+    <Layout>
       <section class="section4 flex" id="projects">
         <h2 class="title">My Recent Works</h2>
         <div class="projects-container grid">
@@ -48,6 +48,6 @@ export const Projects = () => {
           </div>
         </div>
       </section>
-    </>
+    </Layout>
   );
 };

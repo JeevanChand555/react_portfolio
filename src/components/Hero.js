@@ -1,10 +1,11 @@
 import React from "react";
 import user from "../assests/images/user.png";
 import CV from "../assests/images/CV.docx";
+import { Layout } from "./Layout";
 
 export const Hero = () => {
   return (
-    <>
+    <Layout>
       {/* <!-- Hero  --> */}
       <section class="section1" id="header">
         <div class="hero grid">
@@ -70,6 +71,6 @@ export const Hero = () => {
           </div>
         </div>
       </section>
-    </>
+    </Layout>
   );
 };

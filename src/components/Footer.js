@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Layout } from "./Layout";
 
 export const Footer = () => {
   return (
@@ -9,16 +11,16 @@ export const Footer = () => {
             <h3>Links</h3>
             <ul class="flex">
               <li>
-                <a href="#header">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <Link to="/skills">Skills</Link>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <Link to="/projects">Projects</Link>
               </li>
               <li>
-                <a href="#about">About</a>
+                <Link to="/about">About</Link>
               </li>
             </ul>
           </div>
@@ -26,16 +28,16 @@ export const Footer = () => {
             <h3>Socials</h3>
             <ul class="flex">
               <li>
-                <a href="">LinkedIn</a>
+                <Link to="">LinkedIn</Link>
               </li>
               <li>
-                <a href="">Github</a>
+                <Link to="">Github</Link>
               </li>
               <li>
-                <a href="">Twitter</a>
+                <Link to="">Twitter</Link>
               </li>
               <li>
-                <a href="">Youtube</a>
+                <Link to="">Youtube</Link>
               </li>
             </ul>
           </div>

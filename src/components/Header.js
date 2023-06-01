@@ -1,14 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
     <>
-      <label for="darkMode">
-        <i class="fa-solid fa-circle-half-stroke dark-mode-toggle"></i>
-      </label>
-
-      {/* <!-- Header  --> */}
-
       <header class="flex primary-header">
         <div class="flex logo">
           <div>
@@ -28,19 +23,19 @@ export const Header = () => {
 
           <ul class="flex navigation">
             <li>
-              <a href="#header">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <Link to="/skills">Skills</Link>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>

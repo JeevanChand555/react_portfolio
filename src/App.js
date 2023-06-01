@@ -6,10 +6,14 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { About } from "./components/About";
 import { Footer } from "./components/Footer";
+// import { Contact } from "./components/Contact";
+import { Route } from "react-router";
+import { Routes } from "react-router";
 // import { Contact } from "./components/COntact";
 
 // importing images
 import user from "./assests/images/user.png";
+import { Contact } from "./components/Contact";
 
 function App() {
   return (
@@ -19,33 +23,43 @@ function App() {
 
       <div class="wrapper">
         {/* Header Section  */}
-        <Header />
+        {/* <Header />  */}
 
-        {/* Hero Section  */}
+        <Routes>
+          <Route path="/" element={<Hero />} />
 
-        <Hero />
+          {/* Hero Section  */}
 
-        {/* <!-- Skills  section--> */}
+          {/* <!-- Skills  section--> */}
 
-        <Skills />
-        {/* <!-- Projects  --> */}
+          <Route path="skills" element={<Skills />} />
 
-        <Projects />
+          {/* <!-- Projects  --> */}
 
-        {/* <!-- About  --> */}
+          <Route path="projects" element={<Projects />} />
 
-        <About />
+          {/* <!-- About  --> */}
 
-        {/* <!-- Get in touch  */}
+          <Route path="about" element={<About />} />
 
-        {/* <Contact /> */}
+          {/* <!-- Get in touch  */}
+          {/* <Routes path = "/" element={<Hero />}> */}
 
-        {/* <!-- Footer  --> */}
+          {/* <Contact /> */}
+          <Route path="contact" element={<Contact />} />
 
-        <Footer />
+          {/* <!-- Footer  --> */}
+        </Routes>
+
+        {/* <Footer /> */}
       </div>
     </div>
   );
 }
 
 export default App;
+
+// 1. npm i react-router-dom
+// 2. wrap entire components with BrowserRouter in index.js or app.js
+// 3. use Routes componenets to wrap all the pages
+//4. define individual page by using Route componenet
