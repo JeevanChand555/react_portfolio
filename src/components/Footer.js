@@ -1,10 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Layout } from "./Layout";
 
 export const Footer = () => {
   return (
     <>
+      {/* <!-- scroll to top button --> */}
+      <div className="to-top flex">
+        <div>
+          <a href="#home">
+            <i className="fa-solid fa-arrow-up fa-bounce"></i>
+          </a>
+        </div>
+      </div>
+
       <footer>
         <div class="footer-container flex">
           <div class="flex links">
@@ -48,3 +56,5 @@ export const Footer = () => {
     </>
   );
 };
+
+export default Footer;
